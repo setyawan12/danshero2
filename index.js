@@ -5194,7 +5194,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
  if ((budy) && ["P"].includes(budy) && !isCmd) {
             
             alpha.sendTextWithMentions(m.chat, '*Bot Online...*', m)}
- if ((budy) && ["proses", "Proses", "P"].includes(budy) && !isCmd) {
+ if ((budy) && ["proses", "Proses"].includes(budy) && !isCmd) {
             if (!m.isGroup) return
 if (!isGroupAdmins && !isGroupOwner && !isCreator) return
 if (!m.quoted) return reply(lang.LockCmd())
